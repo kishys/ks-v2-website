@@ -6,97 +6,8 @@
     <title>kishan suhi</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background: url('img/gradient.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 15px;
-            backdrop-filter: blur(5px);
-            max-width: 800px;
-            margin: 2rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        h3 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-        }
-
-
-        .projects {
-            margin-top: 2rem;
-        }
-
-        .taskninja-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1rem;
-            border-radius: 10px;
-            margin: 1rem 0;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-            background: url('img/taskpre.png') no-repeat center center fixed;
-        }
-
-        .taskninja-card:hover {
-            transform: translateY(-5px);
-            background: url('img/taskpost.png') no-repeat center center fixed;
-        }
-
-        .edura-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1rem;
-            border-radius: 10px;
-            margin: 1rem 0;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-            background: url('img/edurapre.png') no-repeat center center fixed;
-        }
-
-        .edura-card:hover {
-            transform: translateY(-5px);
-            background: url('img/edurapost.png') no-repeat center center fixed;
-        }
-
-
-        .skills__icon {
-            font-size: 2rem;
-            margin-right: var(--mb-2);
-            color: var(--first-color);
-        }
-        .footer__social {
-            margin-bottom: var(--mb-4);
-        }
-    </style>
 </head>
 <body>
     <div class="container" style="opacity: 0; transform: translateY(-20px); animation: fadeInDown 0.8s ease-out forwards;">
@@ -119,79 +30,12 @@
 
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     <!-- Font Awesome for social icons -->
     <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
-    <script>
-        // Add keyframes for the container animation
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes fadeInDown {
-                from {
-                    opacity: 0;
-                    transform: translateY(-20px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-        `;
-        document.head.appendChild(style);
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Add animation to project cards
-        const projectCards = document.querySelectorAll('.project-card');
-        projectCards.forEach(card => {
-            card.addEventListener('click', () => {
-                card.style.transform = 'scale(1.05)';
-                setTimeout(() => {
-                    card.style.transform = 'translateY(-5px)';
-                }, 200);
-            });
-        });
-    </script>
 </body>
 <footer>
     <footer>
-        <style>
-            .footer__social a {
-                color: #fff;
-                margin: 0 1rem;
-                text-decoration: none;
-                font-size: 1.5rem;
-                transition: color 0.3s ease;
-            }
-    
-            .footer__social a:hover {
-                color: #00468b;
-            }
-        </style>
         <div class="footer__social">
             <a href="mailto:kishansuhirthan@gmail.com">
                 <i class="fas fa-envelope"></i>
@@ -208,5 +52,7 @@
     
 
 </footer>
+
+<script src="main.js"></script>
 </html>
 
