@@ -6,7 +6,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
 // Add animation to project cards
 const projectCards = document.querySelectorAll('.project-card');
 projectCards.forEach(card => {
