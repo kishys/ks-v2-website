@@ -1,1 +1,1 @@
-Version 2 Personal Site | Status: Active | Jan 2025 - Present
+# Version 2 Personal Site | Status: Retired | Jan 2025 - Feb 2025
